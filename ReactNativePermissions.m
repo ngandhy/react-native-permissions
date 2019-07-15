@@ -36,6 +36,13 @@
 RCT_EXPORT_MODULE();
 @synthesize bridge = _bridge;
 
+
++ (BOOL)requiresMainQueueSetup
+{
+    return YES;
+}
+
+
 #pragma mark Initialization
 
 - (instancetype)init
